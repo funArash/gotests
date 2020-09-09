@@ -1,0 +1,94 @@
+Linux 04:44:44pm; axbannaz@telemetry-dev01:~/Projects/gotests$ master
+$GO=/opt/go/bin/go ./test.sh
+goos: linux
+goarch: amd64
+pkg: github.com/funArash/gotests/types
+BenchmarkIntmethod-24                   527561426                2.27 ns/op
+BenchmarkInterface-24                   354668739                3.11 ns/op
+BenchmarkTypeSwitch-24                  610468412                1.96 ns/op
+BenchmarkTypeAssertion-24               609489550                1.96 ns/op
+BenchmarkTypeAssertionNoCheck-24        607720290                1.96 ns/op
+BenchmarkStaticTypeOnHeap-24            529652469                2.26 ns/op
+BenchmarkStaticTypeOnStack-24           532041483                2.26 ns/op
+PASS
+ok      github.com/funArash/gotests/types       9.928s
+Linux 04:45:50pm; axbannaz@telemetry-dev01:~/Projects/gotests$ master
+$GO=/opt/go1.13/bin/go ./test.sh
+goos: linux
+goarch: amd64
+pkg: github.com/funArash/gotests/types
+BenchmarkIntmethod-24                   519891667                2.27 ns/op
+BenchmarkInterface-24                   354562219                3.39 ns/op
+BenchmarkTypeSwitch-24                  456183342                2.63 ns/op
+BenchmarkTypeAssertion-24               537544008                2.24 ns/op
+BenchmarkTypeAssertionNoCheck-24        530590754                2.26 ns/op
+BenchmarkStaticTypeOnHeap-24            528979278                2.26 ns/op
+BenchmarkStaticTypeOnStack-24           529886498                2.06 ns/op
+PASS
+ok      github.com/funArash/gotests/types       10.044s
+Linux 04:46:25pm; axbannaz@telemetry-dev01:~/Projects/gotests$ master
+$GO=/opt/go1.12/bin/go ./test.sh
+goos: linux
+goarch: amd64
+pkg: github.com/funArash/gotests/types
+BenchmarkIntmethod-24                   1000000000               2.21 ns/op
+BenchmarkInterface-24                   1000000000               2.94 ns/op
+BenchmarkTypeSwitch-24                  1000000000               2.29 ns/op
+BenchmarkTypeAssertion-24               2000000000               1.92 ns/op
+BenchmarkTypeAssertionNoCheck-24        2000000000               1.97 ns/op
+BenchmarkStaticTypeOnHeap-24            2000000000               1.97 ns/op
+BenchmarkStaticTypeOnStack-24           2000000000               1.97 ns/op
+PASS
+ok      github.com/funArash/gotests/types       24.672s
+Linux 04:47:01pm; axbannaz@telemetry-dev01:~/Projects/gotests$ master
+$GO=/opt/go1.11/bin/go ./test.sh
+goos: linux
+goarch: amd64
+pkg: github.com/funArash/gotests/types
+BenchmarkIntmethod-24                   1000000000               2.20 ns/op
+BenchmarkInterface-24                   1000000000               2.94 ns/op
+BenchmarkTypeSwitch-24                  2000000000               2.10 ns/op
+BenchmarkTypeAssertion-24               2000000000               1.83 ns/op
+BenchmarkTypeAssertionNoCheck-24        1000000000               2.24 ns/op
+BenchmarkStaticTypeOnHeap-24            1000000000               2.20 ns/op
+BenchmarkStaticTypeOnStack-24           2000000000               1.97 ns/op
+PASS
+ok      github.com/funArash/gotests/types       22.934s
+Linux 04:47:31pm; axbannaz@telemetry-dev01:~/Projects/gotests$ master
+$GO=/opt/go1.10/bin/go ./test.sh
+goos: linux
+goarch: amd64
+BenchmarkIntmethod-24                   1000000000               2.22 ns/op
+BenchmarkInterface-24                   500000000                3.38 ns/op
+BenchmarkTypeSwitch-24                  1000000000               2.26 ns/op
+BenchmarkTypeAssertion-24               1000000000               2.20 ns/op
+BenchmarkTypeAssertionNoCheck-24        1000000000               2.23 ns/op
+BenchmarkStaticTypeOnHeap-24            1000000000               2.22 ns/op
+BenchmarkStaticTypeOnStack-24           1000000000               2.26 ns/op
+PASS
+ok      _/lhome/axbannaz/Projects/gotests/types 16.833s
+Linux 04:47:55pm; axbannaz@telemetry-dev01:~/Projects/gotests$ master
+$GO=/opt/go1.9/bin/go ./test.sh
+goos: linux
+goarch: amd64
+BenchmarkIntmethod-24                   1000000000               2.20 ns/op
+BenchmarkInterface-24                   1000000000               2.94 ns/op
+BenchmarkTypeSwitch-24                  1000000000               1.96 ns/op
+BenchmarkTypeAssertion-24               2000000000               1.91 ns/op
+BenchmarkTypeAssertionNoCheck-24        2000000000               2.10 ns/op
+BenchmarkStaticTypeOnHeap-24            1000000000               2.20 ns/op
+BenchmarkStaticTypeOnStack-24           1000000000               2.20 ns/op
+PASS
+ok      _/lhome/axbannaz/Projects/gotests/types 21.131s
+Linux 04:48:23pm; axbannaz@telemetry-dev01:~/Projects/gotests$ master
+$GO=/opt/go1.4/bin/go ./test.sh
+testing: warning: no tests to run
+PASS
+BenchmarkIntmethod      1000000000               2.21 ns/op
+BenchmarkInterface      1000000000               2.68 ns/op
+BenchmarkTypeSwitch     100000000               14.2 ns/op
+BenchmarkTypeAssertion  100000000               12.2 ns/op
+BenchmarkTypeAssertionNoCheck   100000000               12.5 ns/op
+BenchmarkStaticTypeOnHeap       1000000000               1.97 ns/op
+BenchmarkStaticTypeOnStack      1000000000               1.97 ns/op
+ok      _/lhome/axbannaz/Projects/gotests/types 13.699s
