@@ -1,0 +1,96 @@
+(base) Darwin 10:38:07P; arashbm@abm:~/Projects/gotests$
+$/opt/go/bin/go test -bench=. ./...
+goos: darwin
+goarch: amd64
+pkg: github.com/funArash/gotests/types
+BenchmarkIntmethod-12                   860511266                1.32 ns/op
+BenchmarkInterface-12                   749430956                1.51 ns/op
+BenchmarkTypeSwitch-12                  1000000000               0.981 ns/op
+BenchmarkTypeAssertion-12               952676569                1.24 ns/op
+BenchmarkTypeAssertionNoCheck-12        915362605                1.29 ns/op
+BenchmarkStaticTypeOnHeap-12            892171915                1.34 ns/op
+BenchmarkStaticTypeOnStack-12           891426104                1.32 ns/op
+PASS
+ok      github.com/funArash/gotests/types       9.072s
+(base) Darwin 10:39:18P; arashbm@abm:~/Projects/gotests$
+$/opt/go1.13/bin/go test -bench=. ./...
+goos: darwin
+goarch: amd64
+pkg: github.com/funArash/gotests/types
+BenchmarkIntmethod-12                   861722709                1.33 ns/op
+BenchmarkInterface-12                   601001821                1.94 ns/op
+BenchmarkTypeSwitch-12                  977460414                1.21 ns/op
+BenchmarkTypeAssertion-12               1000000000               1.13 ns/op
+BenchmarkTypeAssertionNoCheck-12        907595610                1.29 ns/op
+BenchmarkStaticTypeOnHeap-12            895232412                1.32 ns/op
+BenchmarkStaticTypeOnStack-12           889448556                1.32 ns/op
+PASS
+ok      github.com/funArash/gotests/types       9.304s
+(base) Darwin 10:39:42P; arashbm@abm:~/Projects/gotests$
+$/opt/go1.12/bin/go test -bench=. ./...
+goos: darwin
+goarch: amd64
+pkg: github.com/funArash/gotests/types
+BenchmarkIntmethod-12                   2000000000               1.33 ns/op
+BenchmarkInterface-12                   2000000000               1.50 ns/op
+BenchmarkTypeSwitch-12                  2000000000               1.22 ns/op
+BenchmarkTypeAssertion-12               2000000000               1.13 ns/op
+BenchmarkTypeAssertionNoCheck-12        2000000000               1.32 ns/op
+BenchmarkStaticTypeOnHeap-12            2000000000               1.34 ns/op
+BenchmarkStaticTypeOnStack-12           2000000000               1.34 ns/op
+PASS
+ok      github.com/funArash/gotests/types       19.468s
+(base) Darwin 10:40:20P; arashbm@abm:~/Projects/gotests$
+$/opt/go1.11/bin/go test -bench=. ./...
+goos: darwin
+goarch: amd64
+pkg: github.com/funArash/gotests/types
+BenchmarkIntmethod-12                   2000000000               1.34 ns/op
+BenchmarkInterface-12                   2000000000               1.94 ns/op
+BenchmarkTypeSwitch-12                  2000000000               1.22 ns/op
+BenchmarkTypeAssertion-12               2000000000               1.15 ns/op
+BenchmarkTypeAssertionNoCheck-12        2000000000               1.29 ns/op
+BenchmarkStaticTypeOnHeap-12            2000000000               1.32 ns/op
+BenchmarkStaticTypeOnStack-12           2000000000               1.33 ns/op
+PASS
+ok      github.com/funArash/gotests/types       20.421s
+(base) Darwin 10:40:57P; arashbm@abm:~/Projects/gotests$
+$/opt/go1.10/bin/go test -bench=. ./...
+goos: darwin
+goarch: amd64
+BenchmarkIntmethod-12                   2000000000               1.34 ns/op
+BenchmarkInterface-12                   2000000000               1.50 ns/op
+BenchmarkTypeSwitch-12                  2000000000               1.24 ns/op
+BenchmarkTypeAssertion-12               2000000000               1.15 ns/op
+BenchmarkTypeAssertionNoCheck-12        2000000000               1.29 ns/op
+BenchmarkStaticTypeOnHeap-12            2000000000               1.34 ns/op
+BenchmarkStaticTypeOnStack-12           2000000000               1.33 ns/op
+PASS
+ok      _/Users/arashbm/Projects/gotests/types  19.487s
+(base) Darwin 10:41:23P; arashbm@abm:~/Projects/gotests$
+$/opt/go1.9/bin/go test -bench=. ./...
+goos: darwin
+goarch: amd64
+BenchmarkIntmethod-12                   2000000000               1.33 ns/op
+BenchmarkInterface-12                   2000000000               1.94 ns/op
+BenchmarkTypeSwitch-12                  2000000000               1.00 ns/op
+BenchmarkTypeAssertion-12               2000000000               1.13 ns/op
+BenchmarkTypeAssertionNoCheck-12        2000000000               1.30 ns/op
+BenchmarkStaticTypeOnHeap-12            2000000000               1.34 ns/op
+BenchmarkStaticTypeOnStack-12           2000000000               1.33 ns/op
+PASS
+ok      _/Users/arashbm/Projects/gotests/types  19.852s
+(base) Darwin 10:41:53P; arashbm@abm:~/Projects/gotests$
+$/opt/go1.4/bin/go test -bench=. ./...
+testing: warning: no tests to run
+PASS
+BenchmarkIntmethod      2000000000               1.34 ns/op
+BenchmarkInterface      1000000000               2.76 ns/op
+BenchmarkTypeSwitch     100000000               10.4 ns/op
+BenchmarkTypeAssertion  200000000                8.78 ns/op
+BenchmarkTypeAssertionNoCheck   200000000                8.69 ns/op
+BenchmarkStaticTypeOnHeap       2000000000               1.32 ns/op
+BenchmarkStaticTypeOnStack      2000000000               1.33 ns/op
+ok      _/Users/arashbm/Projects/gotests/types  17.994s
+(base) Darwin 10:42:29P; arashbm@abm:~/Projects/gotests$
+$

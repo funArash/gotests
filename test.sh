@@ -1,2 +1,3 @@
 #!/bin/sh 
-go test -bench=. ./types
+GO=${GO:-go}
+${GO} test -bench=. ./types
