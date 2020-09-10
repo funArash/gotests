@@ -48,9 +48,15 @@ func incnAssertion(any Inccer, n int) {
 		}
 	}
 }
+
 func BenchmarkIntmethod(b *testing.B) {
 	i := new(myint)
 	incnIntmethod(i, b.N)
+}
+
+func BenchmarkIntmethodOnStack(b *testing.B) {
+	var i myint
+	incnIntmethod(&i, b.N)
 }
 
 func BenchmarkInterface(b *testing.B) {
